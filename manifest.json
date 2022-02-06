@@ -1,0 +1,41 @@
+{
+  "description": "Page Ripper uses web listeners to detect objects and download them directly.",
+  "author": "Marcelo Martins",
+  "homepage_url": "https://github.com/mmartins000/pageRipper/",
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "images/scalpel-blueish-gray.svg",
+      "32": "images/scalpel-blueish-gray.svg",
+      "48": "images/scalpel-blueish-gray.svg"
+    },
+    "default_title": "pageRipper",
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dev@exploitedbunker.com",
+      "strict_min_version": "57.0"
+    }
+  },
+  "icons": {
+    "16": "images/scalpel-blueish-gray.svg",
+    "48": "images/scalpel-blueish-gray.svg",
+    "96": "images/scalpel-blueish-gray.svg"
+  },
+  "manifest_version": 2,
+  "name": "pageRipper",
+  "incognito": "spanning",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "<all_urls>"
+  ],
+  "short_name": "pageRipper",
+  "version": "0.1.0"
+}
